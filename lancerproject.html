@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+    <title>LANCER | CREATE PROJECT</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .mainContent {
+        border: 1px solid #777777;
+      }
+      #text1 {
+        border: none;
+        border-bottom: 1px solid #777777;
+        border-radius: 0;
+      }
+      #text1:hover {
+        outline: 0;
+        box-shadow: 0;
+      }
+      .currency {
+        text-decoration: underline;
+      }
+      .btn-default {
+        background-color: #ddd;
+        color: #ffffff;
+      }
+      .item {
+        font-size: 40px;
+        color: #ddd;
+      }
+      .item:hover {
+        color: #ddd;
+        text-decoration: none;
+      }
+      ::placeholder {
+        color: rgb(10, 202, 68);
+        padding-left: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainDiv container-fluid">
+      <div class="header container">
+        <div class="row">
+          <div class="col-12 linkDiv">
+            <a href="#" class="item">х</a> &nbsp;
+            <span class="item">|</span> &nbsp;
+            <a href="#" class="item"> < </a> &nbsp;
+            <span class="item">|</span>
+
+            <!-- <div class="font-weight-bolder d-flex justify-content-center">
+              <h3>
+                Create Estimate
+              </h3>
+            </div>
+            <div class="btnNxt d-flex justify-content-end py-3">
+              <button class="btn btn-default  w-25 py-3" type="button">
+                NEXT
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row d-flex">
+        <div class="col-md-2 align-items-stretch"></div>
+        <div class="col-md-8 align-items-stretch">
+          <div class="headerContent">
+            <h3 class="font-weight-bolder">Evaluation</h3>
+            <p>Please input the required details in the form below.</p>
+          </div>
+          <div class="mainContent align-items-stretch">
+            <div class="input">
+              <input
+                type="text"
+                class="form-control my-3 mx-4 w-75 pl-5"
+                id="text1"
+                required
+                placeholder="required"
+              />
+            </div>
+            <hr />
+
+            <div class="billing my-3 mx-4 align-items stretch">
+              <h5 class="font-weight-bolder">Billing</h5>
+
+              <p>
+                How long (in hours) will it take you to complete this project?
+
+                <span class="pl-5"
+                  ><input
+                    type="time"
+                    id="text2"
+                    class="form-control w-25"
+                    placeholder="Hours"
+                /></span>
+              </p>
+
+              <p>
+                <span
+                  >How long do you charge per hour?
+                  <input
+                    type="number"
+                    id="text3"
+                    class="form-control w-25"
+                    placeholder="NGN 0.00"
+                /></span>
+              </p>
+
+              <p>
+                <span>
+                  Projects starts/ends
+                  <a href="">Set start date</a>
+                  <a href="">Set end date</a>
+                </span>
+              </p>
+            </div>
+            <hr />
+
+            <div class="expenses my-3 mx-4 align-items stretch">
+              <h5 class="font-weight-bolder">Expenses</h5>
+
+              <p>
+                How much would it cost you to power your devices or equipment
+                for this project?
+                <span
+                  ><input
+                    type="number"
+                    id="text4"
+                    class="form-control w-25"
+                    placeholder="NGN 0.00"
+                /></span>
+              </p>
+
+              <p>
+                <span>
+                  Are you subcontracting to anyone?
+                  <input
+                    type="number"
+                    id="text5"
+                    class="form-control w-25"
+                    placeholder="E.g. Illustrator, Consulting..."
+                /></span>
+              </p>
+
+              <p>
+                How much would they be paid?
+                <span
+                  ><input
+                    type="number"
+                    id="text6"
+                    class="form-control w-25"
+                    placeholder="NGN 0.00"
+                /></span>
+              </p>
+            </div>
+
+            <div class="expertise my-3 mx-4 align-items stretch ">
+              <h5 class="font-weight-bolder">Expertise</h5>
+
+              <p>
+                How many similar projects have you done before?
+                <span class="pl-5"
+                  ><input type="number" id="text7" class="form-control w-25"
+                /></span>
+              </p>
+              <br />
+              <p>
+                Out of 5 how would you rate your experience level in executing
+                this project?
+                <span class="pl-5"
+                  ><input type="number" id="text8" class="form-control w-25" />
+                </span>
+                /5
+              </p>
+            </div>
+
+            <hr />
+
+            <div class="currencyDiv my-3 mx-4 align-items stretch">
+              <p>Currency: <span class="currency">NGN</span></p>
+            </div>
+          </div>
+
+          <div class="btnNxt d-flex justify-content-center py-3">
+            <button class="btn btn-default  w-25 py-3" type="button">
+              NEXT
+            </button>
+          </div>
+        </div>
+        <div class="col-md-2 align-items-stretch"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
